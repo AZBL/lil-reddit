@@ -19,7 +19,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
-      <Route path="/post/:postId" element={<Post />} /> //posts
+      <Route path="/post/:postId" element={<Post />} />
       <Route path="/subreddit/:subredditId" element={<SubReddit />} />
     </Route>
   )
