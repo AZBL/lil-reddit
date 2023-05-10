@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ReactPlayer from "react-player";
 import InfiniteScroll from "react-infinite-scroll-component";
@@ -38,7 +38,9 @@ const HotPosts = () => {
       {posts.map((post) => (
         <div key={post.data.id} className="post-card">
           <ul className="card-header">
-            <li className="likes">{post.data.ups.toLocaleString("en-US")} likes</li>
+            <li className="likes">
+              {post.data.ups.toLocaleString("en-US")} likes
+            </li>
 
             <li>
               <Link
@@ -60,7 +62,7 @@ const HotPosts = () => {
 
           <Link to={`post/${post.data.id}`} className="post-title">
             <h2 className="post-title">{post.data.title}</h2>
-            <p className='selftext'>{post.data.selftext}</p>
+            <p className="selftext">{post.data.selftext}</p>
           </Link>
 
           <div className="media-container">

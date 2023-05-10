@@ -83,16 +83,14 @@ export default function Post() {
       {/* comments */}
       <div className="comments-contain">
         <h2 className="comments-title">Comments</h2>
-        {comments.map(
-          (comment, index) =>
-            index < 10 && (
-              <div key={comment.data.id} className="comments">
-                <h3 className="comment-author">{comment.data.author}</h3>
-                <p className="comment-body">{comment.data.body}</p>
-                {/* <hr /> */}
-              </div>
-            )
-        )}
+        {comments.map((comment) => (
+          <div key={comment.data.id} className="comments">
+            <div className="comment-card">
+              <h3 className="comment-author">{comment.data.author}</h3>
+              <p className="comment-body">{comment.data.body}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

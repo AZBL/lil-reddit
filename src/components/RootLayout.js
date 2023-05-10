@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SearchBar from "./SearchBar";
+import { SearchBar } from "./SearchBar";
 import { SearchResultsList } from "./SearchResultsList";
 import { FcReddit } from "react-icons/fc";
 import { Outlet, Link } from "react-router-dom";

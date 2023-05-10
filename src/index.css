@@ -181,7 +181,7 @@ input:focus {
     border-radius: 6px;
     overflow: hidden;
     color: #555555;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 .card-header{
@@ -219,7 +219,7 @@ li{
 }
 
 .post-title{
-    grid-column: 2/3;
+    grid-column: 1/-1;
     justify-self: center;
     text-align: center;
     margin-bottom: 20px;
@@ -236,13 +236,12 @@ li{
     background:white;
     grid-column: 2/3;
     font-size: 0.94em;
-    overflow-x: scroll;
+    overflow-x: hidden;
 
 }
 
-
 .media-container {
-    grid-column:2/3;
+    grid-column:1/-1;
     background: white;
     width: 80%;
     height: auto;
@@ -327,7 +326,7 @@ li{
 .comments-contain{
     grid-column:2/3;
     border: 1px solid lightgray;
-    max-width: 800px;
+    max-width: 1200px;
     border-radius: 6px;
     overflow: hidden;
     display: grid; 
@@ -340,17 +339,28 @@ li{
     font-size: 1.2em;
 }
 
+.comment-card{
+    background-color: white;
+    border-radius: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .comment-author{
     font-size: 0.95em;
-    margin-left: 3px;
+  
     background-color: white;
+    border-radius: 6px;
+    padding-left: 3px;
+
 }
 
 .comment-body{
     font-size: 0.95em;
     margin-bottom: 8px;
-    margin-left: 3px;
+  
     background-color: white;
+    border-radius: 6px;
 }
 
 .post-card-footer{
@@ -362,6 +372,18 @@ li{
     margin-top: 120px;
     font-weight: bolder;
 }
+
+@media (max-width: 1000px) {
+    main{
+        grid-column: 1/-1;
+    }
+
+    .post-card{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 
 @media (max-width: 600px) {
     header{
@@ -379,7 +401,6 @@ li{
         text-align: center;
         margin-bottom: 3px;
         font-size: 2.2em;
-
     }
 
     .search-bar-container{
@@ -407,6 +428,17 @@ li{
 
     .selftext{
         max-width: 300px;
-        overflow-x: scroll;
+        overflow-x: hidden;
+        background: white;
+    }
+
+     .post-card{
+        /* grid-column: 1/-1; */
+        margin-left: 5px;
+        margin-right: 5px;
+    } 
+
+    main{
+        grid-column: 1/-1;
     }
 }

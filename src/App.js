@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 
 //pages and layouts
 import Home from "./components/Home";
