@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Lil' Reddit
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Lil' Reddit is a web application inspired by Reddit, built using React and Create React App. This clone interacts with the Reddit API to display posts from r/Popular, along with features like searching/viewing subreddits, viewing individual posts and comments, and pagination. The application includes custom CSS and is deployed on Netlify.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Reddit API Integration**: Fetches and displays posts directly from Reddit's API.
+- **Search Functionality**: Users can search and explore different subreddits.
+- **Detailed Post View**: Click on posts or subreddits to view detailed information.
+- **Comments Viewing**: Read comments on posts to engage with the community.
+- **Pagination**: Navigate through posts efficiently with pagination.
+- **Custom Styling**: A distinct and simple UI/UX experience with custom CSS.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Application
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Visit the live application hosted on Netlify: [Lil' Reddit on Netlify](https://lil-reddit.netlify.app/).
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   `git clone https://github.com/AZBL/lil-reddit`
 
-### `npm run build`
+2. Navigate to the project directory:
+   `cd lil-reddit`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
+   `npm install`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run Lil' Reddit locally:
 
-### `npm run eject`
+`npm start`
+This will start the development server, and you can view the application in your browser at [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions to Lil' Reddit are welcome. If you have suggestions for improvements or encounter any issues, feel free to submit a pull request or open an issue.
